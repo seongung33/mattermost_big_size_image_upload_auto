@@ -36,13 +36,13 @@ wait = WebDriverWait(driver, 15)
 # 로그인 페이지 이동
 # =========================
 
-driver.get(f"{MATTERMOST_URL}/login")
+driver.get(f"{MATTERMOST_URL}login")
 ## 한번 더 누르기
 time.sleep(2.5)
-url = "mattermost://meeting.ssafy.com/login"
-driver.find_element(
-    By.CSS_SELECTOR,
-    'a[href="https://meeting.ssafy.com/login"]'
+wait.until(
+    EC.presence_of_element_located(
+    (By.CSS_SELECTOR,
+    f'a[href="{MATTERMOST_URL}login"]'))
 ).click()
 
 
@@ -89,7 +89,7 @@ wait.until(
 
 
 
-time.sleep(3)
+time.sleep(1.5)
 #################
 ## 이미지 연속 업로드 시작
 ##########
@@ -133,5 +133,3 @@ for file in files:
     ).click()
 
 
-
-##  이미지 선택
