@@ -19,8 +19,6 @@ email = os.getenv("ID")
 PASSWORD = os.getenv("PASSWORD")
 MATTERMOST_URL = os.getenv("MATTERMOST_URL")
 
-EMOJI_NAME = "pepe"
-IMAGE_PATH = r"C:\emoji\pepe.png"
 
 # =========================
 # 드라이버 실행

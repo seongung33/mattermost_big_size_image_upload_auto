@@ -5,7 +5,7 @@ import math
 # =========================
 # 1. image_path 에 원하는 이미지 상대경로 복사 후 입력
 # =========================
-image_path = r"image/image_name.gif"  # image/image_name.gif 에서 image_name.gif를 바꾼다.
+image_path = r"mattermost_big_size_image_upload_auto/image/image_name"  # 이미지 경로 복사 후 입력하기 역슬래시는 슬래시로 변경
 base_name = input("파일 기본 이름 입력: ").strip()
 tile_size = 32  # 메타모스트 최적화 사이즈 16 32 64 128 중 선택 크기가 클수록 메타모스트에선 작게 나타남
 output_folder = "output"
